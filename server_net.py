@@ -80,7 +80,7 @@ class RoutingLayer(nn.Module):
 # ---------------------------------------------------------------
 class prediction_net(nn.Module):
     def __init__(self, w, n_features_input, lr=0.01,
-                 num_primary_caps=8, primary_dim=8,
+                 num_primary_caps=16, primary_dim=4,
                  num_output_caps=4, output_dim=16,
                  num_routing=3):
         super().__init__()
