@@ -24,7 +24,7 @@ class HTTPS(nn.Module):
         self.network = client_network(w, self.N, lr=lr).to(device)
 
         # Load chart events CSV (path is fixed here)
-        chartevents_path = "/content/drive/MyDrive/split_learning/CHARTEVENTS.csv"
+        chartevents_path = "./CHARTEVENTS.csv"
         df_chartevents = pd.read_csv(chartevents_path)
 
         # Prepare data (this builds train/test splits inside)
