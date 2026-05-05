@@ -22,7 +22,7 @@ class HTTPS(nn.Module):
         # FIX 2: lr به client_network پاس داده میشه
         self.network = client_network(w, N, lr=lr).to(device)
 
-        chartevents_path = "/content/drive/MyDrive/split_learning/CHARTEVENTS.csv"
+        chartevents_path = "./CHARTEVENTS.csv"
         df_chartevents = pd.read_csv(chartevents_path)
 
         # FIX 3: target به data_preparing پاس داده میشه
